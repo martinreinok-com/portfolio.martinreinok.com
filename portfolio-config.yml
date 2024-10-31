@@ -1,0 +1,46 @@
+# Global Configuration
+settings:
+  defaultImageWidth: 500
+  defaultImageHeight: 500
+  thumbnailQuality: 80
+  lightboxEnabled: true
+  masonry:
+    enabled: true
+    gutter: 10
+    columnWidth: 250
+
+# Categories Configuration
+categories:
+  - id: product
+    label: Product Renders
+    description: Professional product photographs
+  - id: landscape
+    label: Landscape
+    description: Natural and urban landscapes
+  - id: portrait
+    label: Portrait
+    description: Professional portraits
+  - id: commercial
+    label: Commercial
+    description: Commercial
+
+# Portfolio Items
+items:
+  - title: FS Team Tallinn 2024 Lightshow
+    filename: ../portfolio/Product/FS Team Tallinn 2024 Lightshow.jpg
+    categories: [product]
+    dimensions:
+      width: 1000
+      height: 1000
+    description: Specialty coffee beans photography
+    featured: true
+
+  - title: FS Team Tallinn 2024 Blueprint
+    filename: ../portfolio/Product/FS Team Tallinn 2024 Blueprint.jpg
+    categories: [product]
+    dimensions:
+      width: 1000
+      height: 1000
+    description: Specialty coffee beans photography
+    featured: true
+    

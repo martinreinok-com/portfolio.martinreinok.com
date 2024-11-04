@@ -557,7 +557,9 @@ footer p a span {
 }
 
 .modal-dialog {
-    width: 800px;
+    width: 90%; /* Takes up 90% of the container width */
+    max-width: 800px; /* Won't exceed 800px on larger screens */
+    margin: 0 auto; /* Centers the modal */
 }
 
 .modal-body {

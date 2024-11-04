@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "title": "Formula Student 2024 Light",
+      "image": "portfolio/Product/FS Team Tallinn 2024 Lightshow.jpg",
+      "categories": ["Product"],
+      "description": "Rendered for https://www.formulastudent.ee/",
+      "modalId": "Modal-1"
+    },
+    {
+      "title": "Formula Student 2024 Design",
+      "image": "portfolio/Product/FS Team Tallinn 2024 Design.png",
+      "categories": ["Product"],
+      "description": "Rendered for https://www.formulastudent.ee/",
+      "modalId": "Modal-2"
+    }
+  ]
+}

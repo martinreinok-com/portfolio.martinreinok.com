@@ -8,11 +8,19 @@
       "modalId": "Modal-1"
     },
     {
+      "title": "Leopard 2 A7 Tank",
+      "image": "portfolio/Scene/Leapard-2-A7.jpg",
+      "categories": ["Scene"],
+      "description": "Rendered to preview model",
+      "modalId": "Modal-3"
+    },
+    {
       "title": "Formula Student 2024 Design",
       "image": "portfolio/Product/FS Team Tallinn 2024 Design.png",
       "categories": ["Product"],
       "description": "Rendered for https://www.formulastudent.ee/",
       "modalId": "Modal-2"
     }
+    
   ]
 }

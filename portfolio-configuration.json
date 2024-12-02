@@ -11,7 +11,7 @@
       "title": "Leopard 2 A7 Tank",
       "image": "portfolio/Scene/Leapard-2-A7.jpg",
       "categories": ["Scene"],
-      "description": "Rendered to preview model",
+      "description": "Preview Render",
       "modalId": "Modal-3"
     },
     {
@@ -20,6 +20,13 @@
       "categories": ["Product"],
       "description": "Rendered for https://www.formulastudent.ee/",
       "modalId": "Modal-2"
+    },
+    {
+      "title": "Ford F-150",
+      "image": "portfolio/Scene/F-150.jpg",
+      "categories": ["Scene"],
+      "description": "Preview Render with Landscape",
+      "modalId": "Modal-4"
     }
     
   ]

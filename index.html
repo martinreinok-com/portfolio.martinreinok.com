@@ -9,6 +9,8 @@
 		<meta name="author" content="">
 		<link rel="icon" href="favicon.ico">
 		<title>Martin Reinok Portfolio</title>
+		<!-- Lightbox -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.css" rel="stylesheet">
 		<!-- Bootstrap core CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -28,7 +30,73 @@
 				</div>
 			</div>
 			<div id="portfolio-container">
-				<!-- Portfolio items will be generated here -->
+
+				<!-- First Row -->
+				<div class="row row-0-gutter">
+					<!-- IMAGE 1 -->
+					<div class="col-md-6 col-0-gutter">
+						<div class="portfolio-item">
+							<a href="portfolio/Product/FS Team Tallinn 2024 Lightshow.jpg" class="lightbox-link">
+								<figure class="effect-bubba">
+									<img alt="img" class="img-responsive" loading="lazy" />
+									<figcaption>
+										<h2>Formula Student 2024 Light</h2>
+										<p>Rendered for https://www.formulastudent.ee/</p>
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+					</div>
+					<!-- IMAGE 2 -->
+					<div class="col-md-6 col-0-gutter">
+						<div class="portfolio-item">
+							<a href="portfolio/Product/FS Team Tallinn 2024 Design.jpg" class="lightbox-link">
+								<figure class="effect-bubba">
+									<img alt="Project 3" class="img-responsive" loading="lazy" />
+									<figcaption>
+										<h2>Formula Student 2024 Design</h2>
+										<p>Rendered for https://www.formulastudent.ee/</p>
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+					</div>
+					
+				</div>
+				
+				<!-- Second Row -->
+				<div class="row row-0-gutter">
+					<!-- IMAGE 1 -->
+					<div class="col-md-6 col-0-gutter">
+						<div class="portfolio-item">
+							<a href="portfolio/Scene/Leapard-2-A7.jpg" class="lightbox-link">
+								<figure class="effect-bubba">
+									<img alt="Project 2" class="img-responsive" loading="lazy" />
+									<figcaption>
+										<h2>Leopard 2 A7 Tank</h2>
+										<p>Preview Render</p>
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+					</div>
+					
+					<!-- IMAGE 2 -->
+					<div class="col-md-6 col-0-gutter">
+						<div class="portfolio-item">
+							<a href="portfolio/Scene/F-150.jpg" class="lightbox-link">
+								<figure class="effect-bubba">
+									<img alt="Project 4" class="img-responsive" loading="lazy" />
+									<figcaption>
+										<h2>Ford F-150</h2>
+										<p>Preview Render with Landscape</p>
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
 			</div>
 			</div>
 		</section>
@@ -38,9 +106,31 @@
 				<p>This website source code is available  <a href="https://github.com/martinreinok-com/portfolio.martinreinok.com"><span>here.</span></a></p>
 			</div>
 		</footer>
-
-		<script src="js/portfolio-generator.js"></script>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				new SimpleLightbox('.lightbox-link', {
+					sourceAttr: 'href',
+					overlay: true,
+					closeText: '×',
+					animationSpeed: 200,
+					preloading: true
+				});
+			});
+		</script>
+		<script>
+			// This script runs as soon as this part of the DOM is loaded
+			(function() {
+				document.querySelectorAll('.lightbox-link').forEach(link => {
+					const img = link.querySelector('img');
+					if (img) {
+						img.src = link.href;
+					}
+				});
+			})();
+		</script>
 	</body>
 </html>

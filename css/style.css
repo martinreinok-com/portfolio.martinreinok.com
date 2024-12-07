@@ -321,8 +321,15 @@ figcaption {
     top: 0;
     left: 0;
     width: 100%;
+    padding-top: 56.25%; 
     height: 100%;
 }
+
+.portfolio-item figure img {
+    width: 800px;
+    height: 400px;
+    object-fit: cover;
+  }
 
 figure.effect-bubba {
 	background: #000;
